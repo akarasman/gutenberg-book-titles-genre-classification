@@ -7,7 +7,7 @@ For more details on the method used check the pdf included in the repo.
 
 To run the app
 
-1. CLone the repository to your device
+1. Clone the repository to your device
 
 2. Install everything in requirements.txt
 
