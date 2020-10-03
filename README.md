@@ -11,7 +11,7 @@ To run the app
 
 2. Install everything in requirements.txt
 
-3. Download "models" directory from here: 
+3. Download "models" directory from here: https://www.dropbox.com/s/276i9m8nbu5icak/models.zip?dl=0
 
 4. Decompress and copy models directory to the same directory you cloned the repo
 
