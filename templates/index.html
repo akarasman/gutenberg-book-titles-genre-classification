@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index_css.css') }}">
+</head>
+<body> 
+    <div class="login">
+        <header class="header">
+          <span class="text" style="color: black;">Judge a book by its cover</span>
+          <span class="loader"></span>
+        </header>
+        <form class="form" action="{{ url_for('index') }}" method="post"> 
+            <p style="color:black;">select a model</p>
+            <select id="model" class ="input" style="color:rgb(178, 20, 241)" name = "model">
+                <option value="models/cnn_model.pickle">CNN</option>
+                <option value="models/ann_model.pickle">ANN</option>
+                <option value="models/lstm_model.pickle">LSTM</option>
+                <option value ="models/gradient_boosting_classifier.pickle">XGBoost</option>
+                <option value ="models/logistic_regression_classifier.pickle">Logistic Regression</option>
+                <option value ="models/naive_bayes_classifier.pickle">Naive Bayes</option> 
+            </select> 
+            <input class="input" type="text" style="color:rgb(178, 20, 241)" name = "input_data", placeholder="BOOK NAME">
+            <button class="btn" type="submit"></button>
+        </form>
+      </div>
+      
+ <script>
+  $(document).ready(function() {
+  $('.input').on('focus', function() {
+    $('.login').addClass('clicked');
+  });
+  $('.login').on('submit', function(e) {
+    e.preventDefault();
+    $('.login').removeClass('clicked').addClass('loading');
+  });
+  $('.resetbtn').on('click', function(e){
+      e.preventDefault();
+    $('.login').removeClass('loading');
+    });
+  });
+</script>
+
+
+
+
+

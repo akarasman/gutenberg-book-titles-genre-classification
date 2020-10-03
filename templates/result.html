@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='result_css.css') }}">
+</head>
+<body>
+  <h1>Judge a book by its cover </h1>
+<div class = "title">Top 5 possible categories:</div>
+<div class="cat">
+  <p>1. {{ cat1 }} with probability {{ prob1 }}</p>
+  <p>2. {{ cat2 }} with probability {{ prob2 }}</p>
+  <p>3. {{ cat3 }} with probability {{ prob3 }}</p>
+  <p>4. {{ cat4 }} with probability {{ prob4 }}</p>
+  <p>5. {{ cat5 }} with probability {{ prob5 }}</p>
+</div>
+<div class = "graph">
+  <image src="{{ url_for('static', filename=graph) }}" >
+</div>
+<a href="http://127.0.0.1:5000/" target = "_self" >
+  <button>Reset</button>
+</body>
+
+
+
+
+

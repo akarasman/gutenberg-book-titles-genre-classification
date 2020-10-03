@@ -1,0 +1,39 @@
+
+ @import url(https://fonts.googleapis.com/css?family=Lobster);
+
+ * {
+ margin: 0;
+ padding: 0;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ user-select:none;
+ font-family: "Trebuchet MS", Helvetica, sans-serif
+ }
+
+ body {
+ background: hsla(255, 255%, 255%, 1);
+ background-image: url('wb.jpg');
+ background-repeat: no-repeat; /* Do not repeat the image */
+ background-size: cover; /* Resize the background image to cover the entire container */
+ height: 500px;
+ top: 50%;
+ }
+ h1 {
+   font-family:'Lobster', cursive;
+   text-align: center;
+   font-size: 90px;
+   
+ }
+ div.cat{ 
+   text-align: center;
+   font: "Trebuchet MS", Helvetica, sans-serif;
+   font-size: 20px;
+ }
+ div.title {
+   font-size: 30px;
+   text-align: center;
+ }
+
+ div.graph {
+   text-align: center;
+ }
